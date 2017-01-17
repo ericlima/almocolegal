@@ -17,14 +17,10 @@
 			<div class="container">
 				<h:link id="brandLink" outcome="/index.xhtml" styleClass="brand">
 					<h:outputText value="Welcome to " rendered=" #{request.userPrincipal !=null} "/>
-                    Almocolegal
+                    Almoço legal
                     <h:outputText value=",  #{request.userPrincipal.name}" rendered="#{request.userPrincipal !=null} "/>
 				</h:link>
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="http://forge.jboss.org/document/hands-on-lab">How to Customize</a></li>
-					</ul>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -32,7 +28,7 @@
 	<div class="container forgecontainer">
 		<div id="navigation">
 			<h:link id="homeLink" outcome="/index.xhtml">
-				<h:graphicImage value='#{resource["forge-logo.png"]}' alt="Forge... get hammered" border="0" />	
+				<h:graphicImage value='#{resource["logoDB.png"]}' alt="Logo" border="0" />	
 			</h:link>
 			<ul/>
 		</div>
@@ -51,7 +47,7 @@
 
 	<footer>
 		<div id="footer-wrapper">
-	    	<p>Powered by <a href="http://jboss.org/forge">Forge</a></p>
+	    	<p>Powered by <a href="#">Lima</a></p>
 	    </div>
 	</footer>
 
