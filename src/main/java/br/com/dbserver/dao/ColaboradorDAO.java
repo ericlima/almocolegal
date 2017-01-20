@@ -1,13 +1,11 @@
 package br.com.dbserver.dao;
 
-import javax.persistence.EntityManager;
+import br.com.dbserver.dto.Colaborador;
 
-import br.com.dbserver.util.JPAUtil;
+public class ColaboradorDAO extends GenericDao<Colaborador, Long> {
 
-public class ColaboradorDAO {
+	public ColaboradorDAO() {
+		super(Colaborador.class);
+	}
 	
-	private EntityManager em = JPAUtil.getEntityManager();
-	
-	
-
 }
