@@ -11,12 +11,12 @@ import javax.persistence.criteria.CriteriaQuery;
 
 public abstract class GenericDao<T, I extends Serializable> {
 
-	   @Inject
 	   protected EntityManager entityManager;
 
 	   private Class<T> persistedClass;
 
 	   protected GenericDao() {
+		   //entityManager = new 
 	   }
 
 	   protected GenericDao(Class<T> persistedClass) {
